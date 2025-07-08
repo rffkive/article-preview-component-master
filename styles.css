@@ -9,6 +9,7 @@ box-sizing: border-box;
 body {
  font-family: 'Manrope',sans-serif;
  font-size: 13px;
+ background-color: hsl(210, 46%, 95%);
 }
 
 .attribution { 
