@@ -38,9 +38,8 @@ main {
 
 .drawers-image {
     width: 100%;
-    height: 280px;
+    height: 200px;
     object-fit: cover; /*make sure the image scales nicely*/
-    flex-shrink: 0;
 }
 
 .content {
@@ -50,7 +49,7 @@ main {
 
 .content-title {
     font-size: 16px;
-    line-height: 1.5;
+    line-height: 1.4;
     font-weight: 700;
     color: hsl(217, 19%, 35%);
     margin-bottom: 12px;
@@ -65,7 +64,6 @@ main {
 .profile {
     display: flex;
     align-items: center;
-    justify-content: space-between;
     position: relative;
 }
 
@@ -84,7 +82,7 @@ main {
     line-height: 1.4;
     font-weight: 700;
     color: hsl(217, 19%, 35%);
-    margin-bottom: 4px;
+    margin-bottom: 2px;
 }
 
 .profile-date {
@@ -99,6 +97,8 @@ main {
     height: 32px;
     border-radius: 50%;
     cursor: pointer;
+    display: flex;
+    justify-content: center;
     align-items: center;
     transition: all 0.3s ease;
     position: relative;
@@ -106,25 +106,47 @@ main {
 }
 
 .share-btn:hover {
-    background-color: hsl(214, 17%, 51%);
+    background-color: hsl(212, 23%, 69%);
+  }
+  
+  .share-btn:hover img {
+    filter: brightness(0) invert(1);
   }
   
   .share-btn.active {
     background-color: hsl(214, 17%, 51%);
   }
-
-  .share-btn img {
-    width: 15px;
-    height: 13px;
-    filter: brightness(0) saturate(100%) invert(62%) sepia(6%) saturate(986%) hue-rotate(183deg) brightness(89%) contrast(95%);
-  }
   
-  .share-btn:hover img,
   .share-btn.active img {
-    filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(0%) hue-rotate(93deg) brightness(103%) contrast(103%);
+    filter: brightness(0) invert(1);
   }
 
+  @media (min-width:769px) {
+       .container {
+        flex-direction: row;
+       }
 
+       .drawers-image {
+        width: 285px;
+        height: 100%;
+        min-height: 280px;
+        object-fit: cover;
+        object-position: left center;
+      }
+
+      .content {
+        padding: 32px 40px;
+      }
+
+      .content-title {
+        font-size: 20px;
+        margin-bottom: 12px;
+      }
+      
+      .content-caption {
+        margin-bottom: 20px;
+      }
+  }
 
 
 .attribution { 
