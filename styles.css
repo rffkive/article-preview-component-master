@@ -18,6 +18,13 @@ body {
  flex-direction: column;
 }
 
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1; /*makes <main> expand to fill leftover vertical space after the footer is placed*/
+}
+
 .attribution { 
     font-size: 11px; 
     text-align: center; 
