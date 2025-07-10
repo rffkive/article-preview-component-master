@@ -130,7 +130,7 @@ main {
         width: 285px;
         height: 100%;
         min-height: 280px;
-        object-fit: cover;
+        object-fit: cover; /*will scale to fill in and only slightly crop either top/bottom or sides but no stretcing*/
         object-position: left center;
       }
 
