@@ -4,6 +4,7 @@
 margin: 0;
 padding: 0;
 box-sizing: border-box;
+border: 2px solid red;
 }
 
 body {
@@ -23,6 +24,10 @@ main {
     justify-content: center;
     align-items: center;
     flex: 1; /*makes <main> expand to fill leftover vertical space after the footer is placed*/
+}
+
+.container {
+
 }
 
 .attribution { 
