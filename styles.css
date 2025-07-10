@@ -32,24 +32,25 @@ main {
     box-shadow: 0 40px 40px -10px rgba(201, 213, 225, 0.503415);
     display: flex;
     overflow: hidden;
+    flex-direction: column;
+    position: relative;
 }
 
 .drawers-image {
-    height: 100%;
-    width: 240px;
+    width: 100%;
+    height: 280px;
     object-fit: cover; /*make sure the image scales nicely*/
     flex-shrink: 0;
 }
 
 .content {
-    display: flex;
-    flex-direction: column;
-    padding: 20px;
+    padding: 36px 32px 20px;
+    flex: 1;
 }
 
 .content-title {
-    font-size: 20px;
-    line-height: 1.4;
+    font-size: 16px;
+    line-height: 1.5;
     font-weight: 700;
     color: hsl(217, 19%, 35%);
     margin-bottom: 12px;
@@ -58,7 +59,7 @@ main {
 .content-caption {
     color: hsl(214, 17%, 51%);
     line-height: 1.5;
-    margin-bottom: 20px;
+    margin-bottom: 32px;
 }
 
 .profile {
@@ -83,12 +84,50 @@ main {
     line-height: 1.4;
     font-weight: 700;
     color: hsl(217, 19%, 35%);
+    margin-bottom: 4px;
 }
 
 .profile-date {
     color: hsl(214, 17%, 51%);
     line-height: 1.5;
 }
+
+.share-btn {
+    background-color: hsl(210, 46%, 95%);
+    border: none;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    cursor: pointer;
+    align-items: center;
+    transition: all 0.3s ease;
+    position: relative;
+    z-index: 10;
+}
+
+.share-btn:hover {
+    background-color: hsl(214, 17%, 51%);
+  }
+  
+  .share-btn.active {
+    background-color: hsl(214, 17%, 51%);
+  }
+
+  .share-btn img {
+    width: 15px;
+    height: 13px;
+    filter: brightness(0) saturate(100%) invert(62%) sepia(6%) saturate(986%) hue-rotate(183deg) brightness(89%) contrast(95%);
+  }
+  
+  .share-btn:hover img,
+  .share-btn.active img {
+    filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(0%) hue-rotate(93deg) brightness(103%) contrast(103%);
+  }
+
+  @media (min-width:768px) {
+       
+  }
+
 
 .attribution { 
     font-size: 11px; 
