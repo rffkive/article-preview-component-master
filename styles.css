@@ -15,6 +15,7 @@ body {
  justify-content: center;
  min-height: 100vh;
  flex-direction: column;
+ padding: 20px; /* Prevents content from touching screen edges */
 }
 
 main {
