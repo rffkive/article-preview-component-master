@@ -141,13 +141,13 @@ main {
     content: '';
     position: absolute;
     top: 100%;
-    left: 50%;
+    left: 60%;
     transform: translateX(-50%);
     border: 12px solid transparent;
     border-top-color: hsl(217, 19%, 35%); /*create the triangle shape*/
   }
 
-  .share-popup:hover {
+.share-popup:hover {
     opacity: 1;
     visibility: visible;
     transform: translateY(0);
