@@ -133,6 +133,8 @@ main {
     transform: translateY(10px);
   transition: all 0.3s ease;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  opacity: 0;
+  visibility: hidden;
   }
 
   .share-popup::before {
@@ -143,6 +145,12 @@ main {
     transform: translateX(-50%);
     border: 12px solid transparent;
     border-top-color: hsl(217, 19%, 35%); /*create the triangle shape*/
+  }
+
+  .share-popup:hover {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
   }
 
   .share-popup span {
