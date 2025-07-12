@@ -136,6 +136,16 @@ main {
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
   }
 
+  .share-popup::before {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 12px solid transparent;
+    border-top-color: hsl(217, 19%, 35%); /*create the triangle shape*/
+  }
+
   .share-popup span {
     color: hsl(214, 17%, 51%);
     display: flex;
