@@ -128,7 +128,11 @@ main {
     padding: 18px 36px;
     display: flex;
     top: -70px;
-  right: -68px;  
+    right: -68px;
+    gap: 16px;
+    transform: translateY(10px);
+  transition: all 0.3s ease;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
   }
 
 
