@@ -5,6 +5,7 @@ shareBtn.addEventListener("click", () =>
 {
   console.log ("first share button");
   showOverlay ();
+  showPopup ();
 }
 );
 
@@ -19,4 +20,8 @@ const shareOverlay = document.querySelector(".share-overlay");
 
 function showOverlay () {
   shareOverlay.classList.toggle('active');
+}
+
+function showPopup () {
+  sharePopup.classList.toggle('active');
 }
